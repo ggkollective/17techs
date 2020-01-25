@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Object2 {
+    int64 number2 = 1;
+}
+
+message Object {
+    string str2 = 1;
+    Object2 object2 = 2;
+}
+
+message ProtobufMessage {
+    int64 number = 1;
+    double pi = 2;
+    string str = 3;
+    string null_key = 4;
+    Object object = 5;
+    repeated int64 num_array = 6;
+    repeated string str_array = 7;
+}

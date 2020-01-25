@@ -1,0 +1,21 @@
+number: &num 12345 # 이제 이 변수는 *num으로 접근할 수 있습니다.
+pi: 3.14
+str: 문자열 값
+# null 값은 ~ 로 표시합니다.
+null_key: ~
+object: # 내부 객체
+  str2: 문자열 값2
+  object2: # ['object']['object2'] 로 접근 가능합니다.
+    number2: *num # number2는 number 값(12345)을 참조합니다.
+num_array:
+- 1
+- 2
+- 3
+- 4
+- 5
+str_array:
+- one
+- two
+- three
+- four
+- five

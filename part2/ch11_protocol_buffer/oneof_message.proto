@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+message Login {
+    // 유저 ID
+    string user_id = 1;
+    // 비밀 번호
+    string password = 2;
+}
+
+message Product {
+    // 상품 ID
+    string id = 1;
+    // 개수
+    int64 count = 2;
+}
+
+message Order {
+    // 인증 토큰
+    string access_token = 1;
+    // 상품 정보
+    repeated Product products = 2;
+    // ...
+}
+
+message Refund {
+    string access_token = 1;
+    // 취소할 주문의 ID
+    string order_id = 2;
+    // 취소할 상품 정보들
+    repeated Product products = 3;
+}
+
+message RequestMsg {
+    oneof msg {
+        Login login = 1;
+        Order order = 2;
+        Refund refund = 3;
+    }
+}

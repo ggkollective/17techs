@@ -1,0 +1,7 @@
+bitstring
+gettext
+flask
+pyyaml
+lxml
+protobuf3
+six

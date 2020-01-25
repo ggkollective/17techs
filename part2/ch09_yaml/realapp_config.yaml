@@ -1,0 +1,10 @@
+definitions:
+  default: &default
+    min_log_level: info
+    app_name: realapp
+    log_dir: logs
+    secure_mode: false
+configurations:
+  dev: *default
+  qa: *default
+  production: *default

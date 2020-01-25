@@ -1,0 +1,19 @@
+definitions:
+  default: &default
+    min_log_level: info
+    app_name: realapp
+    log_dir: logs
+    secure_mode: false
+configurations:
+  dev:
+    <<: *default
+    min_log_level: verbose
+    server_url: http://dev.realapp.com
+  qa:
+    <<: *default
+    server_url: http://qa.realapp.com
+  production:
+    <<: *default
+    min_log_level: warning
+    secure_mode: true
+    server_url: http://www.realapp.com

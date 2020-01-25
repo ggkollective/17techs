@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+message AnotherMessage {
+  string name = 1;
+  int64 num64 = 2;
+}
+
+message SimpleMessage {
+  string name = 1;
+  int64 num64 = 2;
+  double float64 = 3;
+  bytes uuid = 4;
+  enum Type {
+      Ping = 0;
+      Urgent = 1;
+  }
+  Type type = 5;
+
+  // List<String>과 동일합니다.
+  repeated string name_list = 6;
+  // List<Int64>와 동일합니다.
+  repeated int64 num64_list = 7;
+
+  // Map<String, String>과 동일합니다.
+  map<string, string> map_field = 8;
+
+  AnotherMessage another_msg = 9;
+  repeated AnotherMessage another_msg2 = 10;
+}
+

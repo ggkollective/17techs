@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <number>12345</number>
+    <pi>3.14</pi>
+    <str option1="1" option2="2">문자열 값</str>
+    <null_tag />
+    <object>
+        <str2>문자열 값2</str2>
+        <object2>
+            <number2>12345</number2>
+        </object2>
+    </object>
+    <num_array>
+        <element>1</element>
+        <element>2</element>
+        <element attribute="value">3</element>
+        <element>4</element>
+        <element>5</element>
+    </num_array>
+    <str_array>
+        <element>one</element>
+        <element>two</element>
+        <element>three</element>
+        <element>four</element>
+        <element>five</element>
+    </str_array>
+</message>
