@@ -28,7 +28,7 @@ def check_password(password):
 
     result = re.search(r'[@#$%^&+=]', password)
     if not result:
-        print("최소 1개의 특수문자(@#%^&+=)를 포함해야 합니다.")
+        print("최소 1개의 특수 문자(@#%^&+=)를 포함해야 합니다.")
         return
 
     print("비밀 번호 검증에 성공했습니다.")
