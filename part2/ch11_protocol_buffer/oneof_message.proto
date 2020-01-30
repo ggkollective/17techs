@@ -3,7 +3,7 @@ syntax = "proto3";
 message Login {
     // 유저 ID
     string user_id = 1;
-    // 비밀 번호
+    // 비밀번호
     string password = 2;
 }
 
