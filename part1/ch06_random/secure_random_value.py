@@ -3,7 +3,7 @@
 import os
 import struct
 
-# 랜덤값을 10번 출력합니다.
+# 랜덤값을 열 번 출력합니다.
 for i in range(1, 10):
     # 운영체에서 제공하는 기능을 사용해 랜덤하게 생성된 4바이트 값을 읽습니다.
     random_four_byte = os.urandom(4)
