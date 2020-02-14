@@ -31,7 +31,7 @@ def check_password(password):
         print("최소 1개의 특수 문자(@#%^&+=)를 포함해야 합니다.")
         return
 
-    print("비밀 번호 검증에 성공했습니다.")
+    print("비밀번호 검증에 성공했습니다.")
 
 
 check_password('<Your password@>')
