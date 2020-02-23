@@ -5,11 +5,11 @@ import gettext
 
 
 translation_ko = gettext.translation(
-    domain='example', localedir='./locale', languages=['ko_KR'])
+    domain='i18n_multilang', localedir='./locale', languages=['ko_KR'])
 translation_zh = gettext.translation(
-    domain='example', localedir='./locale', languages=['zh_CN'])
+    domain='i18n_multilang', localedir='./locale', languages=['zh_CN'])
 translation_ja = gettext.translation(
-    domain='example', localedir='./locale', languages=['ja_JP'])
+    domain='i18n_multilang', localedir='./locale', languages=['ja_JP'])
 
 translation_ko.install()
 #translation_zh.install()
