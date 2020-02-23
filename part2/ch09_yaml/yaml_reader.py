@@ -8,7 +8,7 @@ def open_yaml_file(filename):
     with open(filename, encoding='UTF8') as file:
         try:
             return yaml.load(file, Loader=yaml.SafeLoader)
-        except ValueError as e:
+        except yaml.parser.ParserError as e:
             print('YAML 데이터를 파싱하는 데 실패했습니다. 사유={0}'.format(e))
             return None
 
