@@ -39,12 +39,12 @@ assert(3 <= float_value < 3.2)
 assert(str_value and len(str_value) > 0)
 
 # 객체 안 객체 접근
-json_data2 = yaml_data['object']
-print('json_data[\'object\'][\'str2\']={0}'.format(json_data2['str2']))
+yaml_data2 = yaml_data['object']
+print('yaml_data[\'object\'][\'str2\']={0}'.format(yaml_data2['str2']))
 
 # 배열 접근
-json_array = yaml_data['num_array']
-for n in json_array:
+yaml_array = yaml_data['num_array']
+for n in yaml_array:
     print('n={0}'.format(n))
 
 # 'unknown_key'를 읽는 잘못된 방법
