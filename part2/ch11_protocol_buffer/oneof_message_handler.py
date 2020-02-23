@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 다음 코드를 실행하기 위해서는 protobuf3, six 모듈이 필요합니다.
 
-import oneof_message_pb2
+from . import oneof_message_pb2
 
 
 def create_login():
