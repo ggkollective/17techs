@@ -1,5 +1,5 @@
 bitstring
-gettext
+python-gettext
 flask
 pyyaml
 lxml

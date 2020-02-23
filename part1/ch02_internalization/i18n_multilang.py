@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 다음 코드를 실행하기 위해서는 gettext 모듈이 필요합니다.
+# 다음 코드를 실행하기 위해서는 python-gettext 모듈이 필요합니다.
 import gettext
 
 
