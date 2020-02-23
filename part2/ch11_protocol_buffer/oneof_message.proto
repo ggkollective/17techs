@@ -23,6 +23,7 @@ message Order {
 }
 
 message Refund {
+    // 인증 토큰
     string access_token = 1;
     // 취소할 주문의 ID
     string order_id = 2;
